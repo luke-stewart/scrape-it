@@ -33,15 +33,12 @@ app.use(logger("dev"));
 app.use(express.static(path.join(__dirname, 'public')));
 
 var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
+
 mongoose.Promise = Promise;
 
-mongoose.connect(MONGODB_URI, function (err, db) {
-  	if (err) {
-    	console.log('Unable to connect to the mongoDB server. Error:', err);
-  	} else {
-    	console.log('Connection established to', MONGODB_URI);
-	}
-});
+// mongoose.connect(MONGODB_URI,  {
+//   	useMongoClient: true
+// });
 
 var db = mongoose.connection;
 

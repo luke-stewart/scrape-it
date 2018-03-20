@@ -1,5 +1,5 @@
 html, body {
-	background-image: url(../images/background.jpg);
+	background-image: url(./public/images/newspaper.jpg);
 	background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -27,7 +27,6 @@ html, body {
 }
 
 .jumbotron {
-	background-image: url(../images/newspaper.jpg);
 	margin-top: 50px;
 }
 
@@ -51,7 +50,6 @@ html, body {
 }
 
 #panelbody{
-	background-image: url(../images/article.jpg);
 	background-size: length;
 	height: 100%;
 }
